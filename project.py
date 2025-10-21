@@ -47,10 +47,10 @@ def main():
     while True: 
         print("wax polish: 3.00")
         add_polish = input("Do you want wax polish? (yes/no): ").lower() 
-        if add_polish == "yes" or "y":
+        if add_polish in ("yes", "y"):
             wax_polish = 3.00
             break 
-        elif add_polish == "no" or "n":
+        elif add_polish in ("no", "n"):
             wax_polish = 0 
             break 
         else:
@@ -59,10 +59,10 @@ def main():
     while True:
         print("interior_vacuum: 4.00£")
         add_vacuum = input("Do you want interior vacuum?(yes/no)").lower()
-        if add_vacuum == "yes" or "y":
+        if add_vacuum in ("yes", "y"):
             interior_vacuum = 4.00
             break
-        elif add_vacuum == "no" or "n":
+        elif add_vacuum in ("no", "n"):
             interior_vacuum = 0
             break 
         else:
@@ -72,10 +72,10 @@ def main():
     while True:
         print("tyre_shrine: 2.50£")
         add_tyre = input("Do you want tyre shine?(yes/no):").lower()
-        if add_tyre == "yes" or "y":
+        if add_tyre in ("yes", "y"):
             tyre_shine = 2.50
             break
-        elif add_tyre == "no" or "n":
+        elif add_tyre in ("no", "n"):
             tyre_shine = 0
             break 
         else:
@@ -99,4 +99,5 @@ def main():
     print(f"Total (Incl. VAT): £{total_price_inc_VAT:.2f}")
 
 main()
+
 
