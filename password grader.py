@@ -5,10 +5,11 @@ while True:
     password = input("Enter your password to grade: ")
     if len(password) >= 8 and len(password) <= 15:
         break
-    elif len(password) >= 10:
-        score += 20
     else:
         print("Invalid password")
+
+if len(password) >= 10:
+    score += 20
     
 # deduction 
 if password.islower(): # check if password is lower case only and removes 3 points per charater 
@@ -47,6 +48,7 @@ elif score >= 81:
 
         
         
+
 
 
 
