@@ -13,13 +13,13 @@ if password.islower(): # check if password is lower case only and removes 3 poin
     score -= 3 * len(password)
 elif password.isupper(): # does the same thing 
     score -= 3 * len(password)
-elif password.isdigit(): # does the same thing but deduct 5 points per charater 
+elif password.isdigit(): # does the same thing but deduct 5 points per character 
     score -= 5 * len(password)
 
 
 
 for char in password:
-    if char in special_character: # check for ecah special charater and adds 10 points 
+    if char in special_character: # check for each special character and adds 10 points 
         score += 10
     elif char.islower() : # check for each lower case letter and adds 5 points 
         score += 5
@@ -45,5 +45,6 @@ elif score >= 81:
 
         
         
+
 
 
