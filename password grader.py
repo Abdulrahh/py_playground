@@ -1,12 +1,14 @@
 score = 0
-password = input("Enter your password to grade: ")
 special_character = ["!", "%", "&","*","+","="]
 
-if  len(password) >= 8 and len(password) <= 15:
-    score += 20
-    print("Valid Password length")
-else:
-    print("Invalid password")
+while True:
+    password = input("Enter your password to grade: ")
+    if len(password) >= 8 and len(password) <= 15:
+        break
+    elif len(password) >= 10:
+        score += 20
+    else:
+        print("Invalid password")
     
 # deduction 
 if password.islower(): # check if password is lower case only and removes 3 points per charater 
@@ -45,6 +47,7 @@ elif score >= 81:
 
         
         
+
 
 
 
