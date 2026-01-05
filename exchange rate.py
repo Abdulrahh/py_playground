@@ -13,7 +13,7 @@ for _ in rate: # print out the key values meaning the currecy users can covert t
 while True:
     try:
         GBP = float(input("Enter Amount in pounds you wish to convert: "))
-        if GBP >= 2500: # validate to keep looping until user enters the appropriate amount 
+        if GBP > 2500: # validate to keep looping until user enters the appropriate amount 
             print("AMOUNT EXCEEDED THE LIMIT (2500)")
         else:
             break 
@@ -66,4 +66,5 @@ print("------------------------------------------------")
 
     
     
+
 
