@@ -18,7 +18,7 @@ while True:
         else:
             break 
     except(ValueError):
-        print("Error pls enter a value in pounds")
+        print("Error please enter a value in pounds")
 
 while True: #exhange rate calculation and validation check if user input is same as in the disctionary 
     currency  = input("Enter a currency to convert: ").upper() # help make user input in upper case 
@@ -66,3 +66,4 @@ print("------------------------------------------------")
 
     
     
+
