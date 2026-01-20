@@ -56,5 +56,3 @@ print(f"score: {score}")
                    
             
 
-#print(f" substraction between {num1} {num2}")
-#print(f" Answer is: {sub}")
